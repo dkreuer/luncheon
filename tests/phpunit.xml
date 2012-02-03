@@ -1,0 +1,14 @@
+<phpunit bootstrap="./bootstrap.php">
+    <testsuite name="Application">
+        <directory>./application</directory>
+    </testsuite>
+    <testsuite name="Library">
+        <directory>./library</directory>
+    </testsuite>
+    
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../../library/Zend</directory>
+        </whitelist>
+    </filter>
+</phpunit>
